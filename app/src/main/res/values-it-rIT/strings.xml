@@ -571,7 +571,7 @@
     <string name="settings_filter_selfttext">Filtri selftext</string>
     <string name="settings_filter_title">Filtri titolo</string>
     <string name="settings_filter_hint">Inserisci le stringhe da filtrare separate da virgole</string>
-    <string name="settings_prefs_reddit">Vedi tutte le preferenze di reddit.com</string>
+    <string name="settings_prefs_reddit">Vedi tutte le preferenze di chatterly.me</string>
     <string name="settings_font_post">Carattere dei titoli dei post</string>
     <string name="settings_font_comment">Carattere dei commenti</string>
     <string name="settings_comment_crop">Taglia immagine troppo grande nella vista commenti</string>
@@ -737,7 +737,7 @@
     <string name="reorder_not_found_err">Subreddit non trovato, ecco alcuni suggerimenti</string>
     <string name="reorder_subscribed_toast">Iscritto a /r/%1$s</string>
     <string name="reorder_unsubscribed_toast">Disiscritto da /r/%1$s</string>
-    <string name="sorting_faq"><b>Come aggiorno i subreddits?</b>\nPer aggiornare i subreddits, clicca sull\'icona di aggiornamento nella barra strumenti!\n\n<b>Mi sono disiscritto da alcuni subreddit ma appaiono ancora nella lista!</b>\nSlide converte i sub disiscritti in iscrizioni casuali. Per rimuoverle, premi a lungo sul/sui subreddit(s) e clicca rimuovi!\n\n<b>Come uso le collezioni?</b>\nPer creare una collezione, clicca il FAB + e seleziona \"Crea una collezione\". Questo ti permette di avere più subreddit come se fossero uno solo, tutto nella schermata principale!</string>
+    <string name="sorting_faq"><b>Come aggiorno i subreddits?</b>\nPer aggiornare i subreddits, clicca sull\'icona di aggiornamento nella barra strumenti!\n\n<b>Mi sono disiscritto da alcuni subreddit ma appaiono ancora nella lista!</b>\nSlide converte i sub disiscritti in iscrizioni casuali. Per rimuoverle, premi a lungo sul/sui subreddit(s) e clicca rimuovi!\n\n<b>Come uso le collezioni?</b>\nPer creare una collezione, clicca il FAB + e seleziona \"Crea una collezione\". Questo ti permette di avere più subchatterly.mee se fossero uno solo, tutto nella schermata principale!</string>
     <string name="FAQ">FAQ</string>
     <string name="alphabetize_subreddits">Subreddit in ordine alfabetico</string>
     <string name="sync_subscriptions">Sincronizza iscrizioni</string>

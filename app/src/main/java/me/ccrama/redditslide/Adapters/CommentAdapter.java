@@ -177,7 +177,7 @@ public class CommentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             mPage.resetScroll(true);
         }
         if (mContext instanceof BaseActivity) {
-            ((BaseActivity) mContext).setShareUrl("https://reddit.com" + submission.getPermalink());
+            ((BaseActivity) mContext).setShareUrl("https://chatterly.me" + submission.getPermalink());
         }
     }
 
@@ -596,7 +596,7 @@ public class CommentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 @Override
                 public void onSingleClick(View v) {
                     if (baseNode.children.getChildrenIds().isEmpty()) {
-                        String toGoTo = "https://reddit.com"
+                        String toGoTo = "https://chatterly.me"
                                 + submission.getPermalink()
                                 + baseNode.comment.getComment().getId()
                                 + "?context=0";
@@ -1056,7 +1056,7 @@ public class CommentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         }
 
         if (mContext instanceof BaseActivity) {
-            ((BaseActivity) mContext).setShareUrl("https://reddit.com"
+            ((BaseActivity) mContext).setShareUrl("https://chatterly.me"
                     + submission.getPermalink()
                     + n.getFullName()
                     + "?context=3");
@@ -1680,7 +1680,7 @@ public class CommentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                             }
                             if (mContext instanceof BaseActivity) {
                                 ((BaseActivity) mContext).setShareUrl(
-                                        "https://reddit.com" + submission.getPermalink());
+                                        "https://chatterly.me" + submission.getPermalink());
                             }
 
                             setCommentStateUnhighlighted(holder, comment, baseNode, true);
@@ -1692,7 +1692,7 @@ public class CommentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         } else {
             if (mContext instanceof BaseActivity) {
                 ((BaseActivity) mContext).setShareUrl(
-                        "https://freddit.com" + submission.getPermalink());
+                        "https://fchatterly.me" + submission.getPermalink());
             }
             currentlySelected = null;
             currentSelectedItem = "";

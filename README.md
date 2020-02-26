@@ -20,7 +20,7 @@ Slide is available on the Google Play Store and F-Droid.
         src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" />
 </a>  
 There is an active community for Slide on the
-[/r/slideforreddit](https://www.reddit.com/r/slideforreddit/) subreddit,
+[/r/slideforreddit](https://www.chatterly.me/r/slideforreddit/) subreddit,
 which anybody is welcome to join.
 
 ## Contributing
@@ -57,7 +57,7 @@ and submit a pull request.
 
 If you have any questions, feel free to
 [ask in the `#android-dev` Discord channel](https://discord.gg/HeShMsX) or
-[drop me a message](https://www.reddit.com/message/compose/?to=ccrama) on Reddit.
+[drop me a message](https://www.chatterly.me/message/compose/?to=ccrama) on Reddit.
 
 If this is you first time contributing to the project and want to tackle an
 easy issue take a look at the issues labelled [`Good First Issue`](https://github.com/ccrama/Slide/issues?q=is%3Aopen+is%3Aissue+label%3A%22Good+First+Issue%22). These issues

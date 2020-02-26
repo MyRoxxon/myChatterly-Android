@@ -252,7 +252,7 @@ public class ContributionAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                     dialoglayout.findViewById(R.id.gild).setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            String urlString = "https://reddit.com" + submission.getPermalink();
+                            String urlString = "https://chatterly.me" + submission.getPermalink();
                             Intent i = new Intent(mContext, Website.class);
                             i.putExtra(LinkUtil.EXTRA_URL, urlString);
                             mContext.startActivity(i);
@@ -263,7 +263,7 @@ public class ContributionAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                         public void onClick(View v) {
                             if (submission.isSelfPost()){
                                 if(SettingValues.shareLongLink){
-                                    Reddit.defaultShareText("", "https://reddit.com" + submission.getPermalink(), mContext);
+                                    Reddit.defaultShareText("", "https://chatterly.me" + submission.getPermalink(), mContext);
                                 } else {
                                     Reddit.defaultShareText("", "https://redd.it/" + submission.getId(), mContext);
                                 }
@@ -279,7 +279,7 @@ public class ContributionAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                                                 switch (which) {
                                                     case R.id.reddit_url:
                                                         if(SettingValues.shareLongLink){
-                                                            Reddit.defaultShareText(submission.getTitle(), "https://reddit.com" + submission.getPermalink(), mContext);
+                                                            Reddit.defaultShareText(submission.getTitle(), "https://chatterly.me" + submission.getPermalink(), mContext);
                                                         } else {
                                                             Reddit.defaultShareText(submission.getTitle(), "https://redd.it/" + submission.getId(), mContext);
                                                         }
@@ -353,7 +353,7 @@ public class ContributionAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    String url = "www.reddit.com" + submission.getPermalink();
+                    String url = "www.chatterly.me" + submission.getPermalink();
                     url = url.replace("?ref=search_posts", "");
                     new OpenRedditLink(mContext, url);
                     if (SettingValues.storeHistory) {

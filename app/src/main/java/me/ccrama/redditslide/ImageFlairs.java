@@ -109,7 +109,7 @@ public class ImageFlairs {
         @Override
         protected FlairStylesheet doInBackground(Void... params) {
             try {
-                HttpRequest r = new HttpRequest.Builder().host("reddit.com")
+                HttpRequest r = new HttpRequest.Builder().host("chatterly.me")
                         .path("/r/" + subreddit + "/stylesheet")
                         .expected(MediaTypes.CSS.type())
                         .build();

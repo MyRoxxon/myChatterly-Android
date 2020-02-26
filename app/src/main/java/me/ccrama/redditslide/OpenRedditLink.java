@@ -88,7 +88,7 @@ public class OpenRedditLink {
 
         if (uri.getHost().startsWith("np")) {
             np = true;
-            uri = uri.buildUpon().authority("reddit.com").build();
+            uri = uri.buildUpon().authority("chatterly.me").build();
         }
 
         RedditLinkType type = getRedditLinkType(uri);
@@ -292,7 +292,7 @@ public class OpenRedditLink {
     }
 
     /**
-     * Takes a reddit.com url and formats it for easier use
+     * Takes a chatterly.me url and formats it for easier use
      *
      * @param url The url to format
      * @return Formatted Uri without subdomains, language tags & other unused prefixes
@@ -310,14 +310,14 @@ public class OpenRedditLink {
             if (ampURL != null) {
                 Uri ampURI = Uri.parse(ampURL);
                 String host = ampURI.getHost();
-                if (host != null && host.equals("amp.reddit.com")) {
+                if (host != null && host.equals("amp.chatterly.me")) {
                     uri = ampURI;
                 }
             }
 
-            if (uri.getPath().startsWith("/amp/s/amp.reddit.com")) {
+            if (uri.getPath().startsWith("/amp/s/amp.chatterly.me")) {
                 List<String> segments = uri.getPathSegments();
-                Uri.Builder builder = uri.buildUpon().authority("reddit.com").path(null);
+                Uri.Builder builder = uri.buildUpon().authority("chatterly.me").path(null);
 
                 appendPathSegments(builder, segments.subList(3, segments.size()));
 
@@ -333,18 +333,18 @@ public class OpenRedditLink {
             String subdomain = host.split("\\.", 2)[0];
 
             if (subdomain.equalsIgnoreCase("np")) {
-                // no participation link: https://www.reddit.com/r/NoParticipation/wiki/index
-                host = "npreddit.com";
+                // no participation link: https://www.chatterly.me/r/NoParticipation/wiki/index
+                host = "npchatterly.me";
             } else if (subdomain.matches("www|ssl|pay|amp|old|new|")
                     // country codes (e.g. en-GB, us)
                     || subdomain.matches("(?i)([_a-z0-9]{2}-)?[_a-z0-9]{1,2}")) {
                 // Subdomains that don't require special handling
-                host = "reddit.com";
+                host = "chatterly.me";
             } else if (subdomain.matches("beta|blog|code|mod|out|store")) {
                 return null;
             } else {
-                // subdomain is a subreddit, change subreddit.reddit.com to reddit.com/r/subreddit
-                host = "reddit.com";
+                // subdomain is a subreddit, change subreddit.chatterly.me to chatterly.me/r/subreddit
+                host = "chatterly.me";
                 builder.path("r").appendPath(subdomain);
                 appendPathSegments(builder, uri.getPathSegments());
             }
@@ -353,9 +353,9 @@ public class OpenRedditLink {
         }
 
         List<String> segments = uri.getPathSegments();
-        // Converts links such as reddit.com/help to reddit.com/r/reddit.com/wiki
+        // Converts links such as chatterly.me/help to chatterly.me/r/chatterly.me/wiki
         if (!segments.isEmpty() && segments.get(0).matches("w|wiki|help")) {
-            Uri.Builder builder = uri.buildUpon().path("/r/reddit.com/wiki");
+            Uri.Builder builder = uri.buildUpon().path("/r/chatterly.me/wiki");
 
             appendPathSegments(builder, segments.subList(1, segments.size()));
 
@@ -385,34 +385,34 @@ public class OpenRedditLink {
         } else if (path.matches("(?i)/message/compose.*")) {
             return RedditLinkType.MESSAGE;
         } else if (path.matches("(?i)(?:/r/[a-z0-9-_.]+)?/(?:w|wiki|help).*")) {
-            // Wiki link. Format: reddit.com/r/$subreddit/w[iki]/$page [optional]
+            // Wiki link. Format: chatterly.me/r/$subreddit/w[iki]/$page [optional]
             return RedditLinkType.WIKI;
         } else if (path.matches("(?i)/r/[a-z0-9-_.]+/about.*")) {
-            // Unhandled link. Format: reddit.com/r/$subreddit/about/$page [optional]
+            // Unhandled link. Format: chatterly.me/r/$subreddit/about/$page [optional]
             return RedditLinkType.OTHER;
         } else if (path.matches("(?i)/r/[a-z0-9-_.]+/search.*")) {
-            // Wiki link. Format: reddit.com/r/$subreddit/search?q= [optional]
+            // Wiki link. Format: chatterly.me/r/$subreddit/search?q= [optional]
             return RedditLinkType.SEARCH;
         } else if (path.matches("(?i)/r/[a-z0-9-_.]+/submit.*")) {
-            // Submit post link. Format: reddit.com/r/$subreddit/submit
+            // Submit post link. Format: chatterly.me/r/$subreddit/submit
             return RedditLinkType.SUBMIT;
         } else if (path.matches("(?i)/(?:r|u(?:ser)?)/[a-z0-9-_.]+/comments/\\w+/[\\w-]*/.+")) {
-            // Permalink to comments. Format: reddit.com/r [or u or user]/$subreddit/comments/$post_id/$post_title [can be empty]/$comment_id
+            // Permalink to comments. Format: chatterly.me/r [or u or user]/$subchatterly.mements/$post_id/$post_title [can be empty]/$comment_id
             return RedditLinkType.COMMENT_PERMALINK;
         } else if (path.matches("(?i)/(?:r|u(?:ser)?)/[a-z0-9-_.]+/comments/\\w+.*")) {
-            // Submission. Format: reddit.com/r [or u or user]/$subreddit/comments/$post_id/$post_title [optional]
+            // Submission. Format: chatterly.me/r [or u or user]/$subchatterly.mements/$post_id/$post_title [optional]
             return RedditLinkType.SUBMISSION;
         } else if (path.matches("(?i)/comments/\\w+.*")) {
-            // Submission without a given subreddit. Format: reddit.com/comments/$post_id/$post_title [optional]
+            // Submission without a given subreddit. Format: chatterly.me/comments/$post_id/$post_title [optional]
             return RedditLinkType.SUBMISSION_WITHOUT_SUB;
         } else if (path.matches("(?i)/r/[a-z0-9-_.]+.*")) {
-            // Subreddit. Format: reddit.com/r/$subreddit/$sort [optional]
+            // Subreddit. Format: chatterly.me/r/$subreddit/$sort [optional]
             return RedditLinkType.SUBREDDIT;
         } else if (path.matches("(?i)/u(?:ser)?/[a-z0-9-_]+.*/m/[a-z0-9_]+.*")) {
-            // Multireddit. Format: reddit.com/u [or user]/$username/m/$multireddit/$sort [optional]
+            // Multireddit. Format: chatterly.me/u [or user]/$username/m/$multireddit/$sort [optional]
             return RedditLinkType.MULTIREDDIT;
         } else if (path.matches("(?i)/u(?:ser)?/[a-z0-9-_]+.*")) {
-            // User. Format: reddit.com/u [or user]/$username/$page [optional]
+            // User. Format: chatterly.me/u [or user]/$username/$page [optional]
             return RedditLinkType.USER;
         } else if (path.matches("^/?$")) {
             // Reddit home link

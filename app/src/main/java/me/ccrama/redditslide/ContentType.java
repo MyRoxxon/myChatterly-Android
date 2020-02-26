@@ -148,7 +148,7 @@ public class ContentType {
         }
 
         if (url.startsWith("//")) url = "https:" + url;
-        if (url.startsWith("/")) url = "reddit.com" + url;
+        if (url.startsWith("/")) url = "chatterly.me" + url;
         if (!url.contains("://")) url = "http://" + url;
 
         try {
@@ -156,7 +156,7 @@ public class ContentType {
             final String host = uri.getHost().toLowerCase(Locale.ENGLISH);
             final String scheme = uri.getScheme().toLowerCase(Locale.ENGLISH);
 
-            if(hostContains(host, "v.redd.it") || (host.equals("reddit.com") && url.contains("reddit.com/video/"))){
+            if(hostContains(host, "v.redd.it") || (host.equals("chatterly.me") && url.contains("chatterly.me/video/"))){
                 if(url.contains("DASH_")){
                     return Type.VREDDIT_DIRECT;
                 } else {
@@ -192,7 +192,7 @@ public class ContentType {
             if (hostContains(host, "tumblr.com") && uri.getPath().contains("post")) {
                 return Type.TUMBLR;
             }
-            if (hostContains(host, "reddit.com", "redd.it")) {
+            if (hostContains(host, "chatterly.me", "redd.it")) {
                 return Type.REDDIT;
             }
             if (hostContains(host, "vid.me")) {

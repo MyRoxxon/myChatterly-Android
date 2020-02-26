@@ -149,7 +149,7 @@ public class LinkUtil {
             url = "https:" + url;
         }
         if (url.startsWith("/")) {
-            url = "https://reddit.com" + url;
+            url = "https://chatterly.me" + url;
         }
         if (!url.contains("://") && !url.startsWith("mailto:")) {
             url = "http://" + url;

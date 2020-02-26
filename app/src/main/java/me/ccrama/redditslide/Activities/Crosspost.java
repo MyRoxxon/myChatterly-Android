@@ -203,7 +203,7 @@ public class Crosspost extends BaseActivity {
                     new AccountManager(Authentication.reddit).sendRepliesToInbox(s,
                             inboxReplies.isChecked());
                     new OpenRedditLink(Crosspost.this,
-                            "reddit.com/r/"
+                            "chatterly.me/r/"
                                     + ((AutoCompleteTextView) findViewById(
                                     R.id.subreddittext)).getText().toString()
                                     + "/comments/"

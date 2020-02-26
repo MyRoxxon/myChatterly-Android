@@ -455,15 +455,15 @@
 
                 <data android:scheme="http"/>
                 <data
-                        android:host="*reddit.com"
+                        android:host="*chatterly.me"
                         android:pathPattern=".*"
                         android:scheme="https"/>
                 <data
-                        android:host="amp.reddit.com"
+                        android:host="amp.chatterly.me"
                         android:pathPattern=".*"
                         android:scheme="https"/>
                 <data
-                        android:host="*reddit.com"
+                        android:host="*chatterly.me"
                         android:pathPattern=".*"
                         android:scheme="http"/>
                 <data
@@ -477,9 +477,9 @@
                         android:pathPattern=".*"
                         android:scheme="http"/>
                 <data android:scheme="https"/>
-                <data android:host="*reddit.com"/>
+                <data android:host="*chatterly.me"/>
                 <data android:host="redd.it"/>
-                <data android:host="amp.reddit.com"/>
+                <data android:host="amp.chatterly.me"/>
 
             </intent-filter>
             <intent-filter>
@@ -492,7 +492,7 @@
 
                 <data
                         android:host="www.google.com"
-                        android:pathPrefix="/amp/s/amp.reddit.com"
+                        android:pathPrefix="/amp/s/amp.chatterly.me"
                         android:scheme="https"/>
 
             </intent-filter>

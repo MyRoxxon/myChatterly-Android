@@ -29,7 +29,7 @@
 
 5.8.7 / 2018-06-10
 ==================
-  * Support for old/new.reddit.com links
+  * Support for old/new.chatterly.me links
 
 5.8.6 / 2018-04-21
 ==================
@@ -98,10 +98,10 @@
   * Insert image link as is if no caption is provided
   * Adblock is now disabled for Twitter.com to reduce likelyhood of running into issues loading Twitter on the Internal browser
   * Thumbnail settings are respected per-sub, but you can override this in content settings
-  * Setting to disable NSFW previews in collections, like [/r/all](https://www.reddit.com/r/all)
+  * Setting to disable NSFW previews in collections, like [/r/all](https://www.chatterly.me/r/all)
   * Force image previews even if user has turned the setting off in reddit prefs (now only Slide settings affect image previews)
   * Use Reddit for some Gif conversions
-  * Support for v.reddit.com links
+  * Support for v.chatterly.me links
   * Setting for single column in multi-window
   * Asks for confirmation before uploading to Imgur
   * Discard button on draft save bar
@@ -122,7 +122,7 @@
 ================
   * Adds support for setting the default subreddit sorting in subreddit sidebar
   * Temporarily switch accounts from the comment box
-  * Image Flair syncing based on code by [/u/ProgramTheWorld](https://www.reddit.com/u/ProgramTheWorld) (sync from sidebar, should work on most subs but please let me know if you find one that doesn't work!), [Screenshots](http://imgur.com/a/oGwNP)
+  * Image Flair syncing based on code by [/u/ProgramTheWorld](https://www.chatterly.me/u/ProgramTheWorld) (sync from sidebar, should work on most subs but please let me know if you find one that doesn't work!), [Screenshots](http://imgur.com/a/oGwNP)
   * Option to download images to subreddit-specific subfolders
   * Adds support for "Pin" system in reorder screen (pinned subs won't reorder when alphabetizing)
   * Adds option for auto alphabetization in reorder screen for new subscriptions
@@ -149,7 +149,7 @@
 ==================
   * Fixed the issue some users were having with laggy notifications while downloading images
   * Added spoiler tag support
-  * Allowed you to add [r/popular](https://www.reddit.com/r/popular) to your subreddits (much like [r/all](https://www.reddit.com/r/all))
+  * Allowed you to add [r/popular](https://www.chatterly.me/r/popular) to your subreddits (much like [r/all](https://www.chatterly.me/r/all))
   * Bug fixes with Immersive Mode
   * Other bug fixes and improvements
 
@@ -157,16 +157,16 @@
 ==================
   * New Website header scrolling (no more double scroll header)
   * Support for direct message links (like remindme)
-  * Three levels of datasaving settings thanks to [/u/touzainanboku](https://www.reddit.com/u/touzainanboku)
+  * Three levels of datasaving settings thanks to [/u/touzainanboku](https://www.chatterly.me/u/touzainanboku)
   * Notifications now dismiss after clicking them
   * Revamp of the Submit screen with ability to upload images, gifs, and albums (same as the edit bar on the text fields)
   * Support GIF keyboard pre-Android N
-  * Improvements to immersive mode thanks to [/u/jseybold](https://www.reddit.com/u/jseybold)
+  * Improvements to immersive mode thanks to [/u/jseybold](https://www.chatterly.me/u/jseybold)
   * Lots of bug fixes and improvements
 
 5.5.3 / 2016-12-11
 ==================
-  * Round icon support (Android 7.1.1, thanks to [/u/themichaelcook](https://www.reddit.com/u/themichaelcook)!)
+  * Round icon support (Android 7.1.1, thanks to [/u/themichaelcook](https://www.chatterly.me/u/themichaelcook)!)
   * Bundled notifications (Android N and above), each message is expandable by itself!
   * Immersive mode improvements
   * Score formatting changed to follow Reddit's new formatting (20.2k instead of 20200) with option to show full score
@@ -219,16 +219,16 @@
   * Improvements to offline mode (it will show last cached comments first instead of submissions)
   * Albums have post/comment fonts
   * Upload multiple images to Imgur albums
-  * Read Later button with a section under Profile > Read Later. Merged with offline save as well (thanks to [/u/mr_novembor](https://www.reddit.com/u/mr_novembor))
+  * Read Later button with a section under Profile > Read Later. Merged with offline save as well (thanks to [/u/mr_novembor](https://www.chatterly.me/u/mr_novembor))
   * Option for larger link font size
-  * New design for gilds (thanks to [/u/freundTech](https://www.reddit.com/u/freundTech))
+  * New design for gilds (thanks to [/u/freundTech](https://www.chatterly.me/u/freundTech))
   * Redesigned some settings screens, Made Offline content settings more accessible
   * Fixed a request bug that was making some of you guys slower, now it will be as fast as desktop all the time
   * Revamp of mod tools, view who removed/approved submissions and comments and why, lock and unlock threads, instant feedback (submission view will change when you do actions on it), ability to distinguish submissions, removed "Are you sure?" dialogs and just execute the action, ability to see removed posts and comments for reapproval, see who removed/reapproved posts and comments, mod log, removal of the "Are you sure?" dialogs, and more!
   * Child comment navigation is its own button now
   * Option to disable comment navigation bar shortcut actions
   * Hopefully fixed blank widget bug and duplicated thumbnail image bug
-  * Thanks to contributor [/u/freundTech](https://www.reddit.com/u/freundTech), all the reported Android N issues were addressed/fixed
+  * Thanks to contributor [/u/freundTech](https://www.chatterly.me/u/freundTech), all the reported Android N issues were addressed/fixed
   * There is now a setting for tinting the Slide icon based on your main sub theme
   * File size in image loading
   * Improved text selection dialog
@@ -243,7 +243,7 @@
   * Tweaked mail notification system
   * Long press for XKCD info/alttext
   * Improvement to gif view and controls (fixed strange glitches that let you see the view on the sides even if it wasn't open)
-  * Fixed [r/random](https://www.reddit.com/r/random) and [r/randnsfw](https://www.reddit.com/r/randnsfw) bugs
+  * Fixed [r/random](https://www.chatterly.me/r/random) and [r/randnsfw](https://www.chatterly.me/r/randnsfw) bugs
   * Fixed history being counted with history turned off
   * MANY improvements to sidebar typing and subreddit selection, now it won't clear if the sub doesn't exist
   * Many other bug fixes and improvements!
@@ -256,7 +256,7 @@
   * Sidebar button in comment overflow menu
   * Links clicked in the Website view will load in Slide views if possible (Reddit links, albums, etc)
   * Turn data saving into a 3 choice menu (v5.4.2.2)
-  * Improvements to night mode menu (thanks [/u/inate71](https://www.reddit.com/u/inate71))!
+  * Improvements to night mode menu (thanks [/u/inate71](https://www.chatterly.me/u/inate71))!
   * Copy menu now uses select dialog from quote menu (v5.4.2.2)
 
 5.4.2 / 2016-08-19
@@ -757,7 +757,7 @@
 5.0.2 / 2016-03-30
 ==================
 
-  * Account for code.reddit.com
+  * Account for code.chatterly.me
   * Accurate SwipeRefreshLayout offset for all devices
   * Added a bottomsheet with actions to the Inbox
   * Added an inbox count snackbar if you have new messages since last visit
@@ -765,10 +765,10 @@
   * Added setting to change image/gif save location
   * Added support for showing friends
   * Allow adding 21 character subreddits
-  * Allow typing /r/reddit.com
+  * Allow typing /r/chatterly.me
   * Collapse parent comments regardless of settings
   * Correct offset for pull-to-refresh in SubmissionsView
-  * Enables 'help' wiki links and reddit.com/wiki
+  * Enables 'help' wiki links and chatterly.me/wiki
   * Externalise and tweak some strings
   * Fixed black background on single submissions
   * Fixed failing test, add more content/link type tests
@@ -1375,7 +1375,7 @@
   * Re-added NSFW filtering because reddit returns nsfw posts if the subreddit is nsfw
   * Removed redundant NSFW checking code (now handled by the reddit api)
   * Fixed crash for cache settings
-  * Added reddit preferences for NSFW posts and previews, syncs from reddit.com/preferences. Various other fixes
+  * Added reddit preferences for NSFW posts and previews, syncs from chatterly.me/preferences. Various other fixes
   * Added a secondary browser to Chrome Customtabs and an option in Link Handling settings to enable/disable it
   * Merge branch 'master' of https://github.com/ccrama/Slide
   * Making swipe anywhere work, fixed images not always loading in FullImageView
@@ -1513,7 +1513,7 @@
   * Evaluate for permalink before regular comment link
   * Add fixme requesting exclusion of unique reddit subdomains from intent filter
   * Remove/add regex specificity as necessary
-  * Handle subreddit.reddit.com links
+  * Handle subreddit.chatterly.me links
   * Merge pull request #659 from l3d00m/fix_158_1974
   * remove arab because of missing ltr layout
   * update strings from crowdin
@@ -1734,7 +1734,7 @@
   * Merge pull request #494 from l3d00m/new_strings
   * Merge pull request #499 from TomerRosenfeld/486
   * Solved issue #486
-  * allow reddit.com/u/me, ...
+  * allow chatterly.me/u/me, ...
   * update strings from crowdin
   * Merge pull request #493 from l3d00m/gold_fix
   * gilding now links to the right url
@@ -1984,7 +1984,7 @@
   * Shadowbox mode gif improvements
   * Filter text in sidebar, Bug fixes
   * Remove authorization token from crash reports
-  * Fixed crashing if reddit.com couldn't be reached during auth
+  * Fixed crashing if chatterly.me couldn't be reached during auth
   * Merge branch 'master' of https://github.com/ccrama/Slide
   * Gitignore improvements
   * Merge https://github.com/l3d00m/Slide
@@ -2111,7 +2111,7 @@ alpha / 2015-10-03
   * Show post as read  
   * Colorize icons when voting
   * Switch vote icon order
-  * allow reddit.com/u/me links
+  * allow chatterly.me/u/me links
   * clear subreddit search after enter button press
   * Gilding now links to the correct URL
   * Added toggleable Floating Action Button to submit posts
@@ -2208,7 +2208,7 @@ alpha / 2015-10-03
   * Comment voting is here
   * Open externally additions (settings)
   * Added optional confirm dialog on app exit
-  * Fixed crashing if reddit.com couldn't be reached during auth
+  * Fixed crashing if chatterly.me couldn't be reached during auth
 
 v4.0.0alpha10 / 2015-10-15
 ==========================

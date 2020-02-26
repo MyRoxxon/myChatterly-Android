@@ -236,7 +236,7 @@ public class ToolboxUI {
                     .replace("{kind}", "comment")
                     .replace("{mod}", Authentication.name)
                     .replace("{title}", "")
-                    .replace("{url}", "https://www.reddit.com"
+                    .replace("{url}", "https://www.chatterly.me"
                             + thing.getDataNode().get("permalink").asText())
                     .replace("{domain}", "")
                     .replace("{link}", "undefined");
@@ -247,7 +247,7 @@ public class ToolboxUI {
                     .replace("{kind}", "submission")
                     .replace("{mod}", Authentication.name)
                     .replace("{title}", thing.getTitle())
-                    .replace("{url}", "https://www.reddit.com"
+                    .replace("{url}", "https://www.chatterly.me"
                             + thing.getDataNode().get("permalink").asText())
                     .replace("{domain}", thing.getDomain())
                     .replace("{link}", thing.getUrl());
@@ -550,10 +550,10 @@ public class ToolboxUI {
             String logResult = "";
             if (log) {
                 // Log the removal
-                Submission s = logRemoval(logSub, logTitle, "https://www.reddit.com"
+                Submission s = logRemoval(logSub, logTitle, "https://www.chatterly.me"
                         + thing.getDataNode().get("permalink").asText());
                 if (s != null) {
-                    logResult = "https://www.reddit.com" + s.getDataNode().get("permalink").asText();
+                    logResult = "https://www.chatterly.me" + s.getDataNode().get("permalink").asText();
                 } else {
                     success = false;
                 }

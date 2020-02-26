@@ -886,7 +886,7 @@ public class PopulateSubmissionViewHolder {
                         break;
                     case 8:
                         if(SettingValues.shareLongLink){
-                            Reddit.defaultShareText(submission.getTitle(), "https://reddit.com" + submission.getPermalink(), mContext);
+                            Reddit.defaultShareText(submission.getTitle(), "https://chatterly.me" + submission.getPermalink(), mContext);
                         } else {
                             Reddit.defaultShareText(submission.getTitle(), "https://redd.it/" + submission.getId(), mContext);
                         }

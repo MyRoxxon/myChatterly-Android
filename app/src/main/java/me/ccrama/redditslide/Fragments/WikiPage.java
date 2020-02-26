@@ -124,7 +124,7 @@ public class WikiPage extends Fragment {
         Bundle bundle = this.getArguments();
         title = bundle.getString("title", "");
         subreddit = bundle.getString("subreddit", "");
-        wikiUrl = "https://www.reddit.com/r/".concat(subreddit).concat("/wiki/");
+        wikiUrl = "https://www.chatterly.me/r/".concat(subreddit).concat("/wiki/");
     }
 
     public void setListener(WikiPageListener listener) {

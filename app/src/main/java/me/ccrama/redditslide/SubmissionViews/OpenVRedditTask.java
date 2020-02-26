@@ -35,7 +35,7 @@ public class OpenVRedditTask extends AsyncTask<String, Void, Void> {
         }
         String hash = url.substring(url.lastIndexOf("/"), url.length());
         try {
-            URL newUrl = new URL("https://www.reddit.com/video" + hash);
+            URL newUrl = new URL("https://www.chatterly.me/video" + hash);
             HttpURLConnection ucon = (HttpURLConnection) newUrl.openConnection();
             ucon.setInstanceFollowRedirects(false);
             String secondURL = new URL(ucon.getHeaderField("location")).toString();

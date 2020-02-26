@@ -37,53 +37,53 @@ public class OpenRedditLinkTest {
     @Test
     public void detectsComment() {
         assertThat(
-                getType("https://www.reddit.com/r/announcements/comments/eorhm/reddit_30_less_typing/c19qk6j"),
+                getType("https://www.chatterly.me/r/announcements/comments/eorhm/reddit_30_less_typing/c19qk6j"),
                 is(RedditLinkType.COMMENT_PERMALINK));
-        assertThat(getType("https://www.reddit.com/r/announcements/comments/eorhm//c19qk6j"),
+        assertThat(getType("https://www.chatterly.me/r/announcements/comments/eorhm//c19qk6j"),
                 is(RedditLinkType.COMMENT_PERMALINK));
-        assertThat(getType("https://www.reddit.com/r/announcements/comments/eorhm//c19qk6j/"),
+        assertThat(getType("https://www.chatterly.me/r/announcements/comments/eorhm//c19qk6j/"),
                 is(RedditLinkType.COMMENT_PERMALINK));
     }
 
     @Test
     public void detectsHome() {
-        assertThat(getType("https://www.reddit.com/"), is(RedditLinkType.HOME));
-        assertThat(getType("np.reddit.com"), is(RedditLinkType.HOME));
+        assertThat(getType("https://www.chatterly.me/"), is(RedditLinkType.HOME));
+        assertThat(getType("np.chatterly.me"), is(RedditLinkType.HOME));
     }
 
     @Test
     public void detectsLive() {
-        assertThat(getType("https://www.reddit.com/live/x9gf3donjlkq"), is(RedditLinkType.LIVE));
+        assertThat(getType("https://www.chatterly.me/live/x9gf3donjlkq"), is(RedditLinkType.LIVE));
     }
 
     @Test
     public void detectsMessage() {
-        assertThat(getType("https://www.reddit.com/message/compose?to=ccrama&subject=&message="),
+        assertThat(getType("https://www.chatterly.me/message/compose?to=ccrama&subject=&message="),
                 is(RedditLinkType.MESSAGE));
     }
 
     @Test
     public void detectsMultiReddit() {
-        assertThat(getType("https://www.reddit.com/user/alexendoo/m/reddit/"),
+        assertThat(getType("https://www.chatterly.me/user/alexendoo/m/reddit/"),
                 is(RedditLinkType.MULTIREDDIT));
     }
 
     @Test
     public void detectsOther() {
-        assertThat(getType("https://www.reddit.com/r/pics/about/moderators"),
+        assertThat(getType("https://www.chatterly.me/r/pics/about/moderators"),
                 is(RedditLinkType.OTHER));
-        assertThat(getType("https://www.reddit.com/live/x9gf3donjlkq/discussions"),
+        assertThat(getType("https://www.chatterly.me/live/x9gf3donjlkq/discussions"),
                 is(RedditLinkType.OTHER));
-        assertThat(getType("https://www.reddit.com/live/x9gf3donjlkq/contributors"),
+        assertThat(getType("https://www.chatterly.me/live/x9gf3donjlkq/contributors"),
                 is(RedditLinkType.OTHER));
     }
 
     @Test
     public void detectsSearch() {
-//FIXME:        assertThat(getType("https://www.reddit.com/search?q=test"),
+//FIXME:        assertThat(getType("https://www.chatterly.me/search?q=test"),
 //                is(RedditLinkType.SEARCH));
         assertThat(
-                getType("https://www.reddit.com/r/Android/search?q=test&restrict_sr=on&sort=relevance&t=all"),
+                getType("https://www.chatterly.me/r/Android/search?q=test&restrict_sr=on&sort=relevance&t=all"),
                 is(RedditLinkType.SEARCH));
     }
 
@@ -95,92 +95,92 @@ public class OpenRedditLinkTest {
     @Test
     public void detectsSubmission() {
         assertThat(
-                getType("https://www.reddit.com/r/announcements/comments/eorhm/reddit_30_less_typing/"),
+                getType("https://www.chatterly.me/r/announcements/comments/eorhm/reddit_30_less_typing/"),
                 is(RedditLinkType.SUBMISSION));
     }
 
     @Test
     public void detectsSubmissionWithoutSub() {
-        assertThat(getType("https://www.reddit.com/comments/eorhm/reddit_30_less_typing/"),
+        assertThat(getType("https://www.chatterly.me/comments/eorhm/reddit_30_less_typing/"),
                 is(RedditLinkType.SUBMISSION_WITHOUT_SUB));
     }
 
     @Test
     public void detectsSubmit() {
-//FIXME:        assertThat(getType("https://www.reddit.com/submit?selftext=true"),
+//FIXME:        assertThat(getType("https://www.chatterly.me/submit?selftext=true"),
 //                is(RedditLinkType.SUBMIT));
-        assertThat(getType("https://www.reddit.com/r/Android/submit"), is(RedditLinkType.SUBMIT));
-        assertThat(getType("https://www.reddit.com/r/Android/submit?selftext=true"),
+        assertThat(getType("https://www.chatterly.me/r/Android/submit"), is(RedditLinkType.SUBMIT));
+        assertThat(getType("https://www.chatterly.me/r/Android/submit?selftext=true"),
                 is(RedditLinkType.SUBMIT));
     }
 
     @Test
     public void detectsSubreddit() {
-        assertThat(getType("https://www.reddit.com/r/android"), is(RedditLinkType.SUBREDDIT));
-        assertThat(getType("https://android.reddit.com/"), is(RedditLinkType.SUBREDDIT));
+        assertThat(getType("https://www.chatterly.me/r/android"), is(RedditLinkType.SUBREDDIT));
+        assertThat(getType("https://android.chatterly.me/"), is(RedditLinkType.SUBREDDIT));
     }
 
     @Test
     public void detectsUser() {
-        assertThat(getType("https://www.reddit.com/u/l3d00m"), is(RedditLinkType.USER));
-        assertThat(getType("https://www.reddit.com/user/l3d00m"), is(RedditLinkType.USER));
+        assertThat(getType("https://www.chatterly.me/u/l3d00m"), is(RedditLinkType.USER));
+        assertThat(getType("https://www.chatterly.me/user/l3d00m"), is(RedditLinkType.USER));
     }
 
     @Test
     public void detectsWiki() {
-        assertThat(getType("https://www.reddit.com/r/Android/wiki/index"), is(RedditLinkType.WIKI));
-        assertThat(getType("https://www.reddit.com/r/Android/help"), is(RedditLinkType.WIKI));
-        assertThat(getType("https://reddit.com/help"), is(RedditLinkType.WIKI));
+        assertThat(getType("https://www.chatterly.me/r/Android/wiki/index"), is(RedditLinkType.WIKI));
+        assertThat(getType("https://www.chatterly.me/r/Android/help"), is(RedditLinkType.WIKI));
+        assertThat(getType("https://chatterly.me/help"), is(RedditLinkType.WIKI));
     }
 
     @Test
     public void formatsBasic() {
-        assertThat(formatURL("https://www.reddit.com/live/wbjbjba8zrl6"),
-                is("https://reddit.com/live/wbjbjba8zrl6"));
+        assertThat(formatURL("https://www.chatterly.me/live/wbjbjba8zrl6"),
+                is("https://chatterly.me/live/wbjbjba8zrl6"));
     }
 
     @Test
     public void formatsNp() {
-        assertThat(formatURL("https://np.reddit.com/live/wbjbjba8zrl6"),
-                is("https://npreddit.com/live/wbjbjba8zrl6"));
+        assertThat(formatURL("https://np.chatterly.me/live/wbjbjba8zrl6"),
+                is("https://npchatterly.me/live/wbjbjba8zrl6"));
     }
 
     @Test
     public void formatsProtocol() {
-        assertThat(formatURL("http://reddit.com"), is("http://reddit.com"));
-        assertThat(formatURL("Https://reddit.com"), is("https://reddit.com"));
-        assertThat(formatURL("https://reddit.com"), is("https://reddit.com"));
+        assertThat(formatURL("http://chatterly.me"), is("http://chatterly.me"));
+        assertThat(formatURL("Https://chatterly.me"), is("https://chatterly.me"));
+        assertThat(formatURL("https://chatterly.me"), is("https://chatterly.me"));
     }
 
     @Test
     public void formatsSubdomains() {
-        assertNull(formatURL("https://beta.reddit.com/"));
-        assertNull(formatURL("https://blog.reddit.com/"));
-        assertNull(formatURL("https://code.reddit.com/"));
-        // https://www.reddit.com/r/modnews/comments/4z2nic/upcoming_change_updates_to_modredditcom/
-        assertNull(formatURL("https://mod.reddit.com/"));
-        // https://www.reddit.com/r/changelog/comments/49jjb7/reddit_change_click_events_on_outbound_links/
-        assertNull(formatURL("https://out.reddit.com/"));
-        assertNull(formatURL("https://store.reddit.com/"));
-        assertThat(formatURL("https://pay.reddit.com/"), is("https://reddit.com/"));
-        assertThat(formatURL("https://ssl.reddit.com/"), is("https://reddit.com/"));
-        assertThat(formatURL("https://en-gb.reddit.com/"), is("https://reddit.com/"));
-        assertThat(formatURL("https://us.reddit.com/"), is("https://reddit.com/"));
+        assertNull(formatURL("https://beta.chatterly.me/"));
+        assertNull(formatURL("https://blog.chatterly.me/"));
+        assertNull(formatURL("https://code.chatterly.me/"));
+        // https://www.chatterly.me/r/modnews/comments/4z2nic/upcoming_change_updates_to_modredditcom/
+        assertNull(formatURL("https://mod.chatterly.me/"));
+        // https://www.chatterly.me/r/changelog/comments/49jjb7/reddit_change_click_events_on_outbound_links/
+        assertNull(formatURL("https://out.chatterly.me/"));
+        assertNull(formatURL("https://store.chatterly.me/"));
+        assertThat(formatURL("https://pay.chatterly.me/"), is("https://chatterly.me/"));
+        assertThat(formatURL("https://ssl.chatterly.me/"), is("https://chatterly.me/"));
+        assertThat(formatURL("https://en-gb.chatterly.me/"), is("https://chatterly.me/"));
+        assertThat(formatURL("https://us.chatterly.me/"), is("https://chatterly.me/"));
     }
 
     @Test
     public void formatsSubreddit() {
-        assertThat(formatURL("/r/android"), is("https://reddit.com/r/android"));
-        assertThat(formatURL("https://android.reddit.com"), is("https://reddit.com/r/android"));
+        assertThat(formatURL("/r/android"), is("https://chatterly.me/r/android"));
+        assertThat(formatURL("https://android.chatterly.me"), is("https://chatterly.me/r/android"));
     }
 
     @Test
     public void formatsWiki() {
-        assertThat(formatURL("https://reddit.com/help"),
-                is("https://reddit.com/r/reddit.com/wiki"));
-        assertThat(formatURL("https://reddit.com/help/registration"),
-                is("https://reddit.com/r/reddit.com/wiki/registration"));
-        assertThat(formatURL("https://www.reddit.com/r/android/wiki/index"),
-                is("https://reddit.com/r/android/wiki/index"));
+        assertThat(formatURL("https://chatterly.me/help"),
+                is("https://chatterly.me/r/chatterly.me/wiki"));
+        assertThat(formatURL("https://chatterly.me/help/registration"),
+                is("https://chatterly.me/r/chatterly.me/wiki/registration"));
+        assertThat(formatURL("https://www.chatterly.me/r/android/wiki/index"),
+                is("https://chatterly.me/r/android/wiki/index"));
     }
 }

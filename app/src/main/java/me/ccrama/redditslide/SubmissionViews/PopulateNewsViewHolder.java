@@ -870,7 +870,7 @@ public class PopulateNewsViewHolder {
                         break;
                     case 8:
                         Reddit.defaultShareText(Html.fromHtml(submission.getTitle()).toString(),
-                                "https://reddit.com" + submission.getPermalink(), mContext);
+                                "https://chatterly.me" + submission.getPermalink(), mContext);
                         break;
                     case 6: {
                         ClipboardManager clipboard = (ClipboardManager) mContext.getSystemService(

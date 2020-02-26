@@ -181,7 +181,7 @@ public class CheckForMail extends BroadcastReceiver {
                             openPIBase = new Intent(c, OpenContent.class);
                             String context = m.getDataNode().get("context").asText();
                             openPIBase.putExtra(OpenContent.EXTRA_URL,
-                                    "https://reddit.com" + context.substring(0,
+                                    "https://chatterly.me" + context.substring(0,
                                             context.lastIndexOf("/")));
                             openPIBase.setAction(m.getSubject());
 
@@ -372,7 +372,7 @@ public class CheckForMail extends BroadcastReceiver {
                     for (Submission s : messages) {
                         Intent readIntent = new Intent(c, OpenContent.class);
                         readIntent.putExtra(OpenContent.EXTRA_URL,
-                                "https://reddit.com" + s.getPermalink());
+                                "https://chatterly.me" + s.getPermalink());
                         readIntent.setAction(s.getTitle());
                         PendingIntent readPI = PendingIntent.getActivity(c,
                                 (int) (s.getCreated().getTime() / 1000), readIntent,

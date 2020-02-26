@@ -436,7 +436,7 @@ public class Submit extends BaseActivity {
                         new AccountManager(Authentication.reddit).sendRepliesToInbox(s,
                                 inboxReplies.isChecked());
                         new OpenRedditLink(Submit.this,
-                                "reddit.com/r/" + ((AutoCompleteTextView) findViewById(
+                                "chatterly.me/r/" + ((AutoCompleteTextView) findViewById(
                                         R.id.subreddittext)).getText().toString() + "/comments/" + s
                                         .getFullName()
                                         .substring(3, s.getFullName().length()));
@@ -468,7 +468,7 @@ public class Submit extends BaseActivity {
                         new AccountManager(Authentication.reddit).sendRepliesToInbox(s,
                                 inboxReplies.isChecked());
                         new OpenRedditLink(Submit.this,
-                                "reddit.com/r/" + ((AutoCompleteTextView) findViewById(
+                                "chatterly.me/r/" + ((AutoCompleteTextView) findViewById(
                                         R.id.subreddittext)).getText().toString() + "/comments/" + s
                                         .getFullName()
                                         .substring(3, s.getFullName().length()));
@@ -507,7 +507,7 @@ public class Submit extends BaseActivity {
                         new AccountManager(Authentication.reddit).sendRepliesToInbox(s,
                                 inboxReplies.isChecked());
                         new OpenRedditLink(Submit.this,
-                                "reddit.com/r/" + ((AutoCompleteTextView) findViewById(
+                                "chatterly.me/r/" + ((AutoCompleteTextView) findViewById(
                                         R.id.subreddittext)).getText().toString() + "/comments/" + s
                                         .getFullName()
                                         .substring(3, s.getFullName().length()));

@@ -164,7 +164,7 @@ public class CommentAdapterHelper {
                         break;
                     case 23: {
                         //Go to comment permalink
-                        String s = "https://reddit.com"
+                        String s = "https://chatterly.me"
                                 + adapter.submission.getPermalink()
                                 + n.getFullName().substring(3, n.getFullName().length())
                                 + "?context=3";
@@ -178,7 +178,7 @@ public class CommentAdapterHelper {
                     case 5: {
                         //Gild comment
                         Intent i = new Intent(mContext, Website.class);
-                        i.putExtra(LinkUtil.EXTRA_URL, "https://reddit.com"
+                        i.putExtra(LinkUtil.EXTRA_URL, "https://chatterly.me"
                                 + adapter.submission.getPermalink()
                                 + n.getFullName().substring(3, n.getFullName().length())
                                 + "?context=3&inapp=false");
@@ -326,7 +326,7 @@ public class CommentAdapterHelper {
                         break;
                     case 4:
                         //Share comment
-                        Reddit.defaultShareText(adapter.submission.getTitle(), "https://reddit.com"
+                        Reddit.defaultShareText(adapter.submission.getTitle(), "https://chatterly.me"
                                 + adapter.submission.getPermalink()
                                 + n.getFullName().substring(3, n.getFullName().length())
                                 + "?context=3", mContext);

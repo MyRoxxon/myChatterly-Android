@@ -343,7 +343,7 @@ public class InboxAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                                 case 30: {
                                     String context = comment.getDataNode().get("context").asText();
                                     new OpenRedditLink(mContext,
-                                            "https://reddit.com" + context.substring(0,
+                                            "https://chatterly.me" + context.substring(0,
                                                     context.lastIndexOf("/")));
                                 }
                                 break;

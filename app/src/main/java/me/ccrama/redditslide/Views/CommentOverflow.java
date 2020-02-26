@@ -270,7 +270,7 @@ public class CommentOverflow extends LinearLayout {
                 columnStart = i;
             } else if (text.substring(i).startsWith("<td")) {
                 // case for <td colspan="2"  align="left">
-                // See last table in https://www.reddit.com/r/GlobalOffensive/comments/51s3r8/virtuspro_vs_vgcyberzen_sl_ileague_s2_finals/
+                // See last table in https://www.chatterly.me/r/GlobalOffensive/comments/51s3r8/virtuspro_vs_vgcyberzen_sl_ileague_s2_finals/
                 columnStarted = true;
                 i += text.substring(i).indexOf(">") + 1;
                 columnStart = i;

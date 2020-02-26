@@ -138,7 +138,7 @@ public class SubChooseAdapter extends ArrayAdapter<String> {
 
                     final float scale = ((Shortcut)getContext()).getResources().getDisplayMetrics().density;
                     int p = (int) (50 * scale + 0.5f);
-                    shortcutIntent.putExtra(OpenContent.EXTRA_URL, "reddit.com/r/" + subreddit);
+                    shortcutIntent.putExtra(OpenContent.EXTRA_URL, "chatterly.me/r/" + subreddit);
                     Intent intent = new Intent();
                     intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
                     intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, "/r/" + subreddit);

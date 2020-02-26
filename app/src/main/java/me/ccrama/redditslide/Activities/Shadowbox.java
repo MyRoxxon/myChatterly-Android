@@ -60,7 +60,7 @@ public class Shadowbox extends FullScreenActivity implements SubmissionDisplay {
         subreddit = multireddit == null ? subreddit : ("multi" + multireddit);
 
         if(multireddit == null){
-            setShareUrl("https://reddit.com/r/" + subreddit);
+            setShareUrl("https://chatterly.me/r/" + subreddit);
         }
 
         applyDarkColorTheme(subreddit);

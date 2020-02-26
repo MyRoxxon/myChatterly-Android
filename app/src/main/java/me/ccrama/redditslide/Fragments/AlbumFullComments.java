@@ -150,7 +150,7 @@ public class AlbumFullComments extends Fragment {
                             .setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    String url = "https://reddit.com"
+                                    String url = "https://chatterly.me"
                                             + "/r/"
                                             + c.getSubredditName()
                                             + "/comments/"
