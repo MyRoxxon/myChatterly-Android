@@ -329,7 +329,7 @@ public class GifUtils {
             }
             if (s.endsWith("/")) s = s.substring(0, s.length() - 1);
             if (s.endsWith("?r")) s = s.substring(0, s.length() - 2);
-            if (s.contains("v.redd.it") && !s.contains("DASH")) {
+            if (s.contains("v.ctrly.xyz") && !s.contains("DASH")) {
                 if (s.endsWith("/")) {
                     s = s.substring(s.length() - 2);
                 }
@@ -340,10 +340,10 @@ public class GifUtils {
         }
 
         public static VideoType getVideoType(String url) {
-            if (url.contains("v.redd.it")) {
+            if (url.contains("v.ctrly.xyz")) {
                 return VideoType.VREDDIT;
             }
-            if (url.contains(".mp4") || url.contains("webm") || url.contains("redditmedia.com") || url.contains("preview.redd.it")) {
+            if (url.contains(".mp4") || url.contains("webm") || url.contains("redditmedia.com") || url.contains("preview.ctrly.xyz")) {
                 return VideoType.DIRECT;
             }
             if (url.contains("gfycat") && !url.contains("mp4")) return VideoType.GFYCAT;

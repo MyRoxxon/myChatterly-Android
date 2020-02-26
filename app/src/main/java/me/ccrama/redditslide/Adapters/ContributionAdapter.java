@@ -265,7 +265,7 @@ public class ContributionAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                                 if(SettingValues.shareLongLink){
                                     Reddit.defaultShareText("", "https://chatterly.me" + submission.getPermalink(), mContext);
                                 } else {
-                                    Reddit.defaultShareText("", "https://redd.it/" + submission.getId(), mContext);
+                                    Reddit.defaultShareText("", "https://ctrly.xyz/" + submission.getId(), mContext);
                                 }
                             }
                             else {
@@ -281,7 +281,7 @@ public class ContributionAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                                                         if(SettingValues.shareLongLink){
                                                             Reddit.defaultShareText(submission.getTitle(), "https://chatterly.me" + submission.getPermalink(), mContext);
                                                         } else {
-                                                            Reddit.defaultShareText(submission.getTitle(), "https://redd.it/" + submission.getId(), mContext);
+                                                            Reddit.defaultShareText(submission.getTitle(), "https://ctrly.xyz/" + submission.getId(), mContext);
                                                         }
                                                         break;
                                                     case R.id.link_url:

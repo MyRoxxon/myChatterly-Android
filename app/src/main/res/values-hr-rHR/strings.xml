@@ -713,7 +713,7 @@
     <string name="login_starting_desc">Ovo bi trebalo trajati samo sekundu&#8230;</string>
     <!-- Over 18 prompt when visiting a NSFW subreddit -->
     <string name="over18_title">/r/%1$s sadrži sadržaj za odrasle</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">Sinkronizacija dovršena</string>
     <!-- Discover section: find -->
     <string name="discover_title">Otkrij</string>

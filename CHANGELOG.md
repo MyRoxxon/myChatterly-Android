@@ -35,7 +35,7 @@
 ==================
   * Option to disable comment inbox replies
   * Added an option to make the back button open the Slide drawer (can now set it to show a quit dialog, exit immediately, or show navigation drawer, thanks to Contributor PiwwowPants)
-  * Fixed crashing in Shadowbox mode with v.redd.it videos
+  * Fixed crashing in Shadowbox mode with v.ctrly.xyz videos
   * Fixed "htts" link sharing
   * Confirm dialog before backing up or restore (thanks to Contributor YusefOuda)
 
@@ -53,8 +53,8 @@
 ================
   * Crosspost submissions from the submission menu, and new UI for crossposted submissions
   * Added new "@" button on the comment reply menu which shows you a history of authors in the current comment chain and allows you to easily tag users in your comment
-  * Added a mute button to videos (v.redd.it with sound and .mp4s)
-  * Support v.redd.it videos with sound, and downloading these videos saves an actual mp4 file to your device!
+  * Added a mute button to videos (v.ctrly.xyz with sound and .mp4s)
+  * Support v.ctrly.xyz videos with sound, and downloading these videos saves an actual mp4 file to your device!
   * Implements ExoPlayer to revamp video views with new video codec support, a new video interface, improved seekbar, and more refined pause/play toggle
   * Externally opened links or notifications will open in a second task, and closing the activity won't switch you back to Slide underneath
   * Slide now shares the shortlink when sharing a submission
@@ -1426,7 +1426,7 @@
   * Fixed auto theme title in toolbar, was 'Cache Settings' for some reason
   * Fixed a stupid bug
   * Merge pull request #719 from l3d00m/settings_update2
-  * exclude slide from opening some redddit links
+  * exclude slide from opening some ctrly.xyz links
   * advanced settings, various setting fixes
   * Merge pull request #717 from rosenpin/added-reddit-settings
   * Merge pull request #718 from Deadleg/fix/settingscrash

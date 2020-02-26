@@ -638,7 +638,7 @@
     <string name="over18_desc">Aveți peste 18 ani și doriți să vedeți conținut pentru adulți?</string>
     <string name="over18_desc_loggedout">Logați-vă pentru a dezactiva această avertizare permanent</string>
     <string name="over18_desc_loggedin">Puteți dezactiva permanent în Setări →Preferințe Reddit → Arată conținut NSFW</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">Sincronizare reușită</string>
     <!-- Discover section: find -->
     <string name="discover_title">Descoperă</string>

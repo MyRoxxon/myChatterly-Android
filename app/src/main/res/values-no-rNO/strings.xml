@@ -540,7 +540,7 @@
     <string name="over18_desc">Er du over 18 og villig til å se voksent innhold?</string>
     <string name="over18_desc_loggedout">Logg inn for å deaktivere denne advarselen permanent</string>
     <string name="over18_desc_loggedin">Du kan deaktivere dette permanent i innstillinger → Reddit innstillinger → Vis NSFW innhold</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">Synkronisering fullført</string>
     <plurals name="color_sync_colored">
         <item quantity="one">%d subreddit ble farget</item>

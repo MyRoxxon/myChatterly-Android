@@ -807,7 +807,7 @@
     <string name="over18_desc">Você tem mais de dezoito anos e está disposto a ver conteúdo adulto?</string>
     <string name="over18_desc_loggedout">Logue para desabilitar este aviso permanentemente</string>
     <string name="over18_desc_loggedin">Você pode desabilitar essa opção permanentemente nas Configurações → Preferências do reddit → Mostrar conteúdo NSFW</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">Sincronização completa</string>
     <plurals name="color_sync_colored">
         <item quantity="one">%d subreddit foi colorido</item>
@@ -1093,7 +1093,7 @@
     <string name="authors_above">Autores acima</string>
     <string name="btn_crosspost">Crosspost</string>
     <string name="btn_reset_color">REDEFINIR COR</string>
-    <string name="settings_shortlink_description">Links serão compartilhados como \'https://redd.it/\'</string>
+    <string name="settings_shortlink_description">Links serão compartilhados como \'https://ctrly.xyz/\'</string>
     <string name="settings_shortlink">Compartilhar shortlink Reddit, sempre que possível</string>
     <string name="disable_replies_comment">Desativar comentários de resposta na caixa de entrada</string>
     <string name="replies_disabled_comment">Respostas de comentário desabilitadas</string>

@@ -47,7 +47,7 @@ public class ContentType {
             final String path = uri.getPath().toLowerCase(Locale.ENGLISH);
 
             return hostContains(host, "gfycat.com")
-                    || hostContains(host, "v.redd.it")
+                    || hostContains(host, "v.ctrly.xyz")
                     || path.endsWith(".gif")
                     || path.endsWith(".gifv")
                     || path.endsWith(".webm")
@@ -63,7 +63,7 @@ public class ContentType {
             final String host = uri.getHost().toLowerCase(Locale.ENGLISH);
             final String path = uri.getPath().toLowerCase(Locale.ENGLISH);
 
-            return hostContains(host, "gfycat.com") || hostContains(host, "v.redd.it") || (
+            return hostContains(host, "gfycat.com") || hostContains(host, "v.ctrly.xyz") || (
                     hostContains(host, "imgur.com")
                             && (path.endsWith(".gif") || path.endsWith(".gifv") || path.endsWith(
                             ".webm"))) || path.endsWith(".mp4");
@@ -156,7 +156,7 @@ public class ContentType {
             final String host = uri.getHost().toLowerCase(Locale.ENGLISH);
             final String scheme = uri.getScheme().toLowerCase(Locale.ENGLISH);
 
-            if(hostContains(host, "v.redd.it") || (host.equals("chatterly.me") && url.contains("chatterly.me/video/"))){
+            if(hostContains(host, "v.ctrly.xyz") || (host.equals("chatterly.me") && url.contains("chatterly.me/video/"))){
                 if(url.contains("DASH_")){
                     return Type.VREDDIT_DIRECT;
                 } else {
@@ -192,7 +192,7 @@ public class ContentType {
             if (hostContains(host, "tumblr.com") && uri.getPath().contains("post")) {
                 return Type.TUMBLR;
             }
-            if (hostContains(host, "chatterly.me", "redd.it")) {
+            if (hostContains(host, "chatterly.me", "ctrly.xyz")) {
                 return Type.REDDIT;
             }
             if (hostContains(host, "vid.me")) {

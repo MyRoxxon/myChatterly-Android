@@ -734,7 +734,7 @@
     <string name="login_starting">Beállítás</string>
     <!-- Over 18 prompt when visiting a NSFW subreddit -->
     <string name="over18_title">/r/%1$s felnőtt tartalmakat tartalmaz</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">Szinkronizálás befejezve</string>
     <plurals name="color_sync_colored">
         <item quantity="one">%d alreddit lett beszínezve</item>

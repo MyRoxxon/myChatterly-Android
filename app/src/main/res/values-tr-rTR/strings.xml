@@ -807,7 +807,7 @@
     <string name="over18_desc">On sekiz yaşın üzerinde ve yetişkin içeriği görmek istiyor musunuz?</string>
     <string name="over18_desc_loggedout">Bu uyarıyı devre dışı bırakmak için oturum açın</string>
     <string name="over18_desc_loggedin">Bu uyarıyı Ayarlar → Reddit tercihleri → NSFW içeriği göster kısmından kapatabilirsiniz</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">Eşleme tamamlandı</string>
     <plurals name="color_sync_colored">
         <item quantity="one">%d subreddit renklendirildi</item>
@@ -1091,7 +1091,7 @@
     <string name="type_vreddit">Reddit Video</string>
     <string name="btn_crosspost">Crosspost</string>
     <string name="btn_reset_color">RENGİ SIFIRLA</string>
-    <string name="settings_shortlink_description">Bağlantılar \'https://redd.it/\' şeklinde paylaşılacaktır</string>
+    <string name="settings_shortlink_description">Bağlantılar \'https://ctrly.xyz/\' şeklinde paylaşılacaktır</string>
     <string name="settings_shortlink">Mümkünse Reddit kısa bağlantısı olarak paylaş</string>
     <string name="replies_disabled_comment">Yorum yanıtları devre dışı bırakıldı</string>
     <string name="replies_enabled_comment">Yorum yanıtları etkinleştirildi</string>

@@ -106,7 +106,7 @@ public class ContentTypeTest {
         assertThat(ContentType.getContentType("https://www.chatterly.me/42wgbg/"), is(Type.REDDIT));
         assertThat(ContentType.getContentType("https://www.chatterly.me/r/live/"), is(Type.REDDIT));
         assertThat(ContentType.getContentType("https://www.chatterly.me"), is(Type.REDDIT));
-        assertThat(ContentType.getContentType("redd.it/eorhm"), is(Type.REDDIT));
+        assertThat(ContentType.getContentType("ctrly.xyz/eorhm"), is(Type.REDDIT));
         assertThat(ContentType.getContentType("/r/Android"), is(Type.REDDIT));
         assertThat(ContentType.getContentType("https://www.chatterly.me/r/Android/wiki/index"), is(Type.REDDIT));
         assertThat(ContentType.getContentType("https://www.chatterly.me/r/Android/help"), is(Type.REDDIT));

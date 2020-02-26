@@ -807,7 +807,7 @@
     <string name="over18_desc">Are you over eighteen and willing to see adult content?</string>
     <string name="over18_desc_loggedout">Log in to disable this warning permanently</string>
     <string name="over18_desc_loggedin">You can disable this permanently in Settings → Reddit preferences → Show NSFW content</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">Sync complete</string>
     <plurals name="color_sync_colored">
         <item quantity="one">%d subreddit was coloured</item>
@@ -1093,7 +1093,7 @@
     <string name="authors_above">Authors above</string>
     <string name="btn_crosspost">Crosspost</string>
     <string name="btn_reset_color">RESET COLOUR</string>
-    <string name="settings_shortlink_description">Links will be shared as \'https://redd.it/\'.</string>
+    <string name="settings_shortlink_description">Links will be shared as \'https://ctrly.xyz/\'.</string>
     <string name="settings_shortlink">Share Reddit shortlink where possible</string>
     <string name="disable_replies_comment">Disable comment inbox replies</string>
     <string name="replies_disabled_comment">Comment replies disabled</string>

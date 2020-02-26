@@ -745,7 +745,7 @@
     <string name="over18_desc">你已年年滿18歲，並願意看到成人內容嗎？</string>
     <string name="over18_desc_loggedout">你需要登入才能永久關閉此警告</string>
     <string name="over18_desc_loggedin">你可以於 設定 → Reddit 設定 → 顯示 NSFW 內容 中關閉此設定</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">同步完成</string>
     <plurals name="color_sync_colored">
         <item quantity="other">%d 個 Subreddit 已增加顏色</item>

@@ -245,7 +245,7 @@ public class MediaView extends FullScreenActivity
                 && !contentUrl.contains(".mp4")
                 && !contentUrl.contains("streamable.com")
                 && !contentUrl.contains("gfycat.com")
-                && !contentUrl.contains("v.redd.it")
+                && !contentUrl.contains("v.ctrly.xyz")
                 && !contentUrl.contains("vid.me")) {
             String type = contentUrl.substring(contentUrl.lastIndexOf(".") + 1, contentUrl.length())
                     .toUpperCase();
@@ -261,7 +261,7 @@ public class MediaView extends FullScreenActivity
             b.sheet(6, file, getString(R.string.mediaview_save, type));
 
         }
-        if (contentUrl.contains("v.redd.it")) {
+        if (contentUrl.contains("v.ctrly.xyz")) {
             b.sheet(15, thread, "View video thread");
         }
         b.listener(new DialogInterface.OnClickListener() {

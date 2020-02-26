@@ -467,18 +467,18 @@
                         android:pathPattern=".*"
                         android:scheme="http"/>
                 <data
-                        android:host="redd.it"
+                        android:host="ctrly.xyz"
                         android:pathPattern=".*"
                         android:scheme="https"/>
 
 
                 <data
-                        android:host="redd.it"
+                        android:host="ctrly.xyz"
                         android:pathPattern=".*"
                         android:scheme="http"/>
                 <data android:scheme="https"/>
                 <data android:host="*chatterly.me"/>
-                <data android:host="redd.it"/>
+                <data android:host="ctrly.xyz"/>
                 <data android:host="amp.chatterly.me"/>
 
             </intent-filter>

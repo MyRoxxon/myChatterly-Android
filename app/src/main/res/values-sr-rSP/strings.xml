@@ -713,7 +713,7 @@
     <string name="over18_title">/r/%1$s садржи садржај за одрасле</string>
     <string name="over18_desc">Да ли сте преко 18 и да ли желите да видите садржај за одрасле?</string>
     <string name="over18_desc_loggedout">Пријавите се да заувек искључите ово упозорење</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">Синхронизација завршена</string>
     <plurals name="color_sync_colored">
         <item quantity="one">%d субредит је обојен</item>

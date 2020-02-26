@@ -839,7 +839,7 @@
     <string name="over18_desc">Czy masz więcej niż 18 lat i chcesz zobaczyć zawartość dla dorosłych?</string>
     <string name="over18_desc_loggedout">Zaloguj się, by permamentnie wyłączyć to ostrzeżenie</string>
     <string name="over18_desc_loggedin">Możesz to wyłączyć permamentnie w Ustawienia → Preferencje Reddita → Pokazuj obrazy NSFW</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">Synchronizacja zakończona</string>
     <!-- Discover section: find -->
     <string name="discover_title">Odkrywaj</string>
@@ -1110,7 +1110,7 @@
     <string name="setting_titleTop">Pokaż tytuł powyżej linią informacji</string>
     <string name="theme_deep">Głęboki</string>
     <string name="btn_reset_color">ZRESTARTUJ KOLOR</string>
-    <string name="settings_shortlink_description">Linki będą udostępniane jako \'https://redd.it/\'</string>
+    <string name="settings_shortlink_description">Linki będą udostępniane jako \'https://ctrly.xyz/\'</string>
     <string name="replies_disabled_comment">Odpowiedzi do komentarzy są wyłączone</string>
     <string name="replies_enabled_comment">Odpowiedzi do komentarzy są włączone</string>
     <string name="browser_choose">Wybierz przeglądarkę</string>

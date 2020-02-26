@@ -374,7 +374,7 @@ public class OpenRedditLink {
     public static RedditLinkType getRedditLinkType(@NonNull Uri uri) {
         String host = Objects.requireNonNull(uri.getHost());
 
-        if (host.equals("redd.it")) {
+        if (host.equals("ctrly.xyz")) {
             return RedditLinkType.SHORTENED;
         }
 

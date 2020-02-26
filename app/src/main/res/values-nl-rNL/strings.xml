@@ -686,7 +686,7 @@
     <string name="over18_desc">Ben je ouder dan 18 jaar en wil je inhoud voor volwassenen zien?</string>
     <string name="over18_desc_loggedout">Meld je aan om deze melding permanent uit te schakelen</string>
     <string name="over18_desc_loggedin">Je kan deze melding permanent uitschakelen in Instellingen → Reddit-voorkeuren → Toon NSFW-inhoud</string>
-    <!-- Subreddit color synchronization - https://redd.it/41054l -->
+    <!-- Subreddit color synchronization - https://ctrly.xyz/41054l -->
     <string name="color_sync_complete">Synchronisatie voltooid</string>
     <plurals name="color_sync_colored">
         <item quantity="one">%d subreddit is gekleurd</item>
